@@ -1,0 +1,418 @@
+*{
+  transition: height .5s ease-out, transform 1s ease;
+    
+}
+
+/* all css converning the introduction here */
+.slowTrans{
+  transition: background-color 2.5s ease-in;
+  background-color: rgba(250,100,120,.4);
+  background-size: cover;
+  background-blend-mode: exclusion;
+}
+
+#intro{
+  height: 250px;
+  background-image: url("http://i32.photobucket.com/albums/d49/gtrabbit/DSC_0830_zpsenmpfp2p.jpg");
+}
+.slowTrans:hover{
+  background-color: black;
+}
+.shadowed{
+  box-shadow: 4px 4px 5px #333222;
+}
+
+.introduction{
+  position: absolute;
+  color: white;
+  background-color: rgba(200,150,100,.3);
+  padding: 0% 2%;
+  width: 155px;
+  font-size: 100%;
+  }
+#intro h2+h2{
+  margin-top: -18%;
+}
+
+#intro h4+p{
+  margin-top: -14%;
+}
+
+.intro1{
+  top: 3%;
+  left: 6%;
+}
+
+.intro2{
+  top: 20%;
+  left: 12%;
+  
+}
+
+/* about me section stuff goes here */
+
+#about{
+  font-family: 'Josefin Slab', serif;
+  margin: 3%;
+  border: double rgba(11,107,90,1) 5px;
+  padding: 2%;
+  background-color: rgba(240,250,255,1);
+ 
+}
+
+
+.aboutHolder{
+  display: inline-block;
+  width: 100%;
+  border-top: double black;
+  
+}
+
+body{
+  /* background-image: url("http://www.zeitzfrankozeitz.de/tl_files/Bilder/Dictionary/fibrin.jpg");  cataract picture that's totally cool*/
+  margin: 0px;
+ 
+  
+}
+
+p{
+  font-size: 10pt;
+}
+
+
+
+
+/* all css concerning project descriptions here */
+#descBox{
+  float: left;
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+  width: 90%;
+  background: linear-gradient(to top right, rgba(200,150,100,.7) 0%, rgba(200,150,100,.7) 20%, rgba(200,150,100,.3) 100%);
+  padding: 2%;
+  color: white;
+  left: 2%;
+ 
+  }
+
+#descBox h3{
+  font-weight: 900;
+}
+
+/* projects stuff */
+.main{
+  font-family: 'Josefin Slab', serif;
+  
+}
+h2, h4, .introduction p{
+  font-family: 'Dancing Script', cursive;
+}
+
+.main h2{
+  display: inline-block;
+  color: black;
+  width: 100%;
+  text-align: center;
+  
+}
+
+#projSection{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-top: double black 4px;
+  border-bottom: double black 4px;
+  background-image: url("http://i32.photobucket.com/albums/d49/gtrabbit/DSC_0791_zps6fk4xhei.jpg");
+  background-attachment: fixed;
+  background-clip: content-box;
+ }
+
+
+/* All css concerning the project wheel below this point*/
+
+.rotator{
+  height: 50px;
+  width: 50px;
+  float: left;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 60;
+  }
+
+
+#turn{
+  border-radius: 50% 0% 50% 50%;
+  background: linear-gradient(to bottom left, rgba(160,120,40,1) 0%, rgba(160,140,140,.8) 30%,  rgba(250,250,250,0) 60%);
+  left: 140px;
+  bottom: 12%;
+  border-top: solid white 3px;
+  border-right: solid white 3px;
+}
+#turn:hover{
+  
+  background: linear-gradient(to bottom left, rgba(160,240,140,1) 0%, rgba(160,240,140,.8) 30%,  rgba(250,250,250,0) 60%);
+}
+#turn2{
+  border-radius: 50% 50% 50% 0%;
+  background: linear-gradient(to top right, rgba(160,120,40,1) 0%, rgba(160,140,140,.8) 30%,  rgba(250,250,250,0) 60%);
+  bottom: 12%;
+  left: -10px;
+  border-bottom: solid white 3px;
+  border-left: solid white 3px;
+}
+#turn2:hover{
+  background: linear-gradient(to top right, rgba(160,240,140,1) 0%, rgba(160,240,140,.8) 30%,  rgba(250,250,250,0) 60%);
+}
+
+#slide1{
+  left: 42.5%;
+  top: -9.5%;
+ }
+#slide2{
+ left: 7.5%;
+ top: 5%;
+ transform: rotate(315deg)
+}
+#slide3{
+  right: 7.5%;
+  top: 5%;
+  transform: rotate(45deg);
+}
+#slide4{
+  transform: rotate(90deg);
+  top: 40%;
+  right: -7%;
+}
+#slide5{
+  transform: rotate(-90deg);
+  top: 40%;
+  left: -7%;
+}
+#slide6{
+  transform: rotate(180deg);
+  left: 42.5%;
+  bottom: -9.5%;
+}
+#slide7{
+  transform: rotate(135deg);
+  bottom: 5%;
+  right: 7.5%;
+    }
+
+
+#slide8{
+  transform: rotate(-135deg);
+  bottom: 5%;
+  left: 7.5%;
+}
+.thumbBackground{
+  position: absolute;
+  width: 15%;
+  background-color: none;
+  height: 20%;
+  
+ 
+  
+}
+
+.thumb{
+  border: ridge;
+  margin: 3px auto;
+  position: relative;
+  display: block;
+  width: 120%;
+ 
+  
+}
+.wheel{
+  position: relative;
+  display: inline-block;
+  margin: 33% -117%;
+  height: 600%;
+  width: 300%;
+  border-radius: 50%;
+  
+ 
+}
+
+.projects{
+  width: 200px;
+  height: 100px;
+  float: left;
+  display: inline-block;
+  position: relative;
+  
+ 
+  
+}
+
+
+/* all css concerning footer/contact */
+
+.foot h2{
+  text-align: center;
+  
+}
+
+.contactThumb{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  }
+
+.icons{
+  display: flex;
+  justify-content: center;
+}
+
+.contactThumb:hover{
+  margin: -1% 1%;
+  
+}
+
+
+
+/* all css concerning the navigation bar below this point*/
+
+.nav{
+  position: fixed;
+  background: linear-gradient(to top, rgba(40,40,40,0) 0%, rgba(40,40,40,.4) 40%, rgba(250,250,250,.5) 70%, rgba(250,250,250,1) 100%);
+  display: flex;
+  width: 100%;
+  opacity: 0.2;
+  height: 60px;
+  overflow: hidden;
+  z-index: 100;
+  font-family: 'Josefin Slab', serif;
+  
+  
+}
+
+.nav:hover{
+  overflow: visible;
+  height: 80px;
+  opacity: 1;
+  
+}
+
+.navTitle{
+  width: 100%;
+  margin: -16px 0%;
+  border-bottom: dashed silver 1px;
+  
+  }
+
+
+
+.navItem:hover{
+  background-color: rgba(200,200,200,.4);
+}
+
+.navItem{
+  color: white;
+}
+
+.navBox{
+  height: 30%;
+  color: black;
+  display: inline-block;
+  overflow:hidden;
+  margin-left: 30px;
+  position: relative;
+ }
+.nav a{
+  color: black;
+  text-decoration: none;
+}
+
+.navProj:hover{
+  height: 100%;
+}
+
+
+
+/* all media queries below this line */
+
+@media only screen and (min-width: 600px){
+  .projects{
+    height: 200px;
+    width: 400px;
+  }
+  #intro{
+    height: 600px;
+  }
+  .introduction{
+    width: 300px;
+    font-size: 200%;
+  }
+  .intro1{
+  top: 13%;
+  left: 6%;
+}
+
+.intro2{
+  top: 40%;
+  left: 12%;
+  
+}
+  
+  #descBox{
+    position: relative;
+    width: 46%;
+    margin-left: -119px;
+  }
+  #turn, #turn2{
+    top: 240px;
+    margin-left: 60px;
+    
+  }
+  
+}
+@media only screen and (min-width: 1000px){
+  .projects{
+    height: 400px;
+    width: 800px;
+  }
+  .wheel{
+    margin-top: 29%;
+  }
+  p{
+    font-size: 12pt;
+  }
+    #descBox{
+    position: relative;
+    width: 41%;
+    margin-left: -269px;
+  }
+   #turn{
+    top: 430px;
+    margin-left: 200px;
+    border-top: solid white 5px;
+    border-right: solid white 5px;
+  }
+    #turn2{
+    top: 430px;
+    margin-left: 200px;
+    border-bottom: solid white 5px;
+    border-left: solid white 5px;
+    
+  }
+   #intro{
+    height: 1000px;
+  }
+  .introduction{
+    width: 500px;
+    font-size: 300%;
+  }
+  .intro1{
+  top: 13%;
+  left: 6%;
+}
+
+.intro2{
+  top: 53%;
+  left: 17%;
+  
+}
+}
